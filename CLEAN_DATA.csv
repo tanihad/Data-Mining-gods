@@ -1,0 +1,254 @@
+,Unnamed: 0,artists,album_name,popularity,track_genre,album_id,duration,Album Rating
+0,0,AJJ,Christmas Island,31,acoustic,6U05Hnv3V8sm93lErI9rNA,180771.0,28.7
+2,2,AJJ,The Bible 2,27,acoustic,0umKI9UKmubVWFCDNxlpH2,163385.0,27.0
+4,4,The Budos Band,The Budos Band III,22,afrobeat,4wGhy77LCdzpd7bdUiwQFN,158760.0,21.7
+7,7,The Souljazz Orchestra,Rising Sun,16,afrobeat,3PN2MpnnwCXrPbFVxd4PM8,301986.0,16.0
+8,8,MGMT,Little Dark Age,83,alt-rock,7GjVWG39IOj4viyWplJV4H,299960.0,83.0
+9,9,The Neighbourhood,Hard To Imagine The Neighbourhood Ever Changing,86,alt-rock,0ODLCdHBFVvKwJGeSfd1jy,206280.0,75.1
+12,12,The Strokes,The New Abnormal,79,alt-rock,2xkZV2Hl1Omi8rk2D7t5lN,309053.0,66.0
+13,13,The 1975,A Brief Inquiry Into Online Relationships,73,alt-rock,6PWXKiakqhI17mTYM4y6oY,248335.0,68.3
+15,15,Red Hot Chili Peppers,The Getaway,74,alt-rock,43otFXrY0bgaq5fB3GrZj6,302000.0,74.0
+17,17,The Strokes,Comedown Machine,72,alt-rock,4WnkQO4xD9ljQooB3VIxCV,204773.0,60.2
+19,19,Dominic Fike,What Could Possibly Go Wrong,71,alt-rock,1BubKJqf6Uc4fNae5kLJJ7,139906.0,67.5
+25,25,Phosphorescent,Muchacho,62,alt-rock,6rAJ4I8SpPMJj0guCZiAI8,370200.0,62.0
+29,29,Bea Miller,Arcane League of Legends (Soundtrack from the Animated Series),64,alt-rock,3MdiH74FL8mhlbnR6DcqJd,230525.0,61.0
+30,30,Crystal Castles,(III),76,alternative,1NIfkZIYVAO6vnfmFOilHc,184760.0,71.5
+31,31,Gorillaz,Plastic Beach,80,alternative,2dIGnmEIy1WZIcZCFSj6i8,200173.0,79.0
+32,32,Little Simz,GREY Area,64,alternative,4Wwm4xg2748zhYuzDRFTgY,154749.0,64.0
+34,34,James Blake;Travis Scott;Metro Boomin,Assume Form,65,alternative,23dKNZpiadggKHrQgHLi3L,193600.0,65.0
+35,35,Teyana Taylor,The Album,66,alternative,11QKDc8OK4rnD3uBs7wKmR,128652.0,66.0
+36,36,Slipknot,We Are Not Your Kind,74,alternative,754RY5WpZ2LTUZsk8kDBju,260773.0,71.5
+37,37,Bicep,Bicep,74,ambient,4psDRFbIlUM1KUb1omccXo,269149.0,59.5
+38,38,Brian Eno;Jon Hopkins;Leo Abrahams,Small Craft On A Milk Sea,56,ambient,47e7SP8MtzYKK8Lm3gEK2i,132306.0,56.0
+39,39,Bicep,Isles,63,ambient,0EdtTRCl3J22AnWrNpH1w9,246506.0,55.3
+40,40,Brian Eno,Apollo,59,ambient,1Z2jkEtW5Sc9wWVxUgyG0E,266200.0,59.0
+41,41,Grouper,The Man Who Died in His Boat,54,ambient,2arK6QEmfa25k2feNozs9e,142120.0,54.0
+42,42,Grouper,A I A: Alien Observer,53,ambient,4Z1BFX1oBckY8bhGEWMYmi,236480.0,53.0
+43,43,Aphex Twin,Syro,55,ambient,6oRuinkJdTge4hpTuClEF8,321880.0,55.0
+44,44,Julien Baker,Turn Out the Lights,46,ambient,3AV0YFhIzY0LDeaJPU5x3O,203973.0,48.5
+45,45,Nils Frahm,Spaces,53,ambient,0DFbQjp468sMiIMTrZdr5w,498000.0,53.0
+47,47,Jon Hopkins,Immunity,51,ambient,1rxWlYQcH945S3jpIMYR35,596773.0,69.0
+49,49,Jon Hopkins,Singularity,48,ambient,1nvzBC1M3dlCMIxfUCBhlO,333400.0,48.0
+52,52,Alcest,Les voyages de l'âme,44,black-metal,1yENAh14y99tcC6No2mXWl,350320.0,44.0
+53,53,Kvelertak,Kvelertak,25,black-metal,5xWx2DMLGYJrbz77k6lxnh,267386.0,22.7
+54,54,Deafheaven,Sunbather,46,black-metal,2kKXGWaCEl06EKZ4DxBJIT,554573.0,43.5
+55,55,Alcest,Écailles de lune,42,black-metal,6b9NZDM5QhD2FViyXKwBRT,498706.0,42.0
+57,57,Deafheaven,Ordinary Corrupt Human Love,40,black-metal,2iA7rzpQsOfAPkfH4Ekp7f,328642.0,41.0
+60,60,Toxic Holocaust,Chemistry of Consciousness,23,black-metal,0jwJZDxGMm3SSm6LULhxgv,127826.0,21.0
+61,61,Kvelertak,Nattesferd,23,black-metal,5EAGz1IagdeJoJ2Cgb4DES,214506.0,19.8
+62,62,Darkthrone,Circle The Wagons,21,black-metal,0M43d6s6l1b5x6SALQSrP0,166826.0,19.5
+63,63,Deafheaven,Infinite Granite,45,black-metal,0kCdT4gjYlSxIV7ll3Yd4M,360333.0,43.3
+64,64,Wolves In The Throne Room,Thrice Woven,20,black-metal,1Uw3L9tXHZFuTS1lepKNVk,689693.0,20.0
+66,66,Wolves In The Throne Room,Celestial Lineage,19,black-metal,3LHSxySCaooKrQxuLtuYSV,88226.0,18.7
+69,69,Kvelertak,Meir,20,black-metal,5PAjZGAD8j0XZANLxJWulb,172906.0,19.0
+73,73,Toxic Holocaust,Conjure and Command,20,black-metal,37C6YgkW0GLoxuSAvAPkUi,173600.0,20.0
+75,75,Leviathan,Scar Sighted,18,black-metal,4hnlvhL0RR3AH2YOVChSsh,337980.0,17.5
+76,76,Darkthrone,The Underground Resistance,18,black-metal,2GbdKYnwbDn7KV37EcVQN1,256252.0,18.0
+81,81,Wolves In The Throne Room,Celestite,17,black-metal,3CZ1efJZ8G1hDBETkFuoxw,872398.0,16.5
+89,89,Cage The Elephant,Melophobia,79,blues,4EK8gtQfdVsmDTji7gBFlz,208760.0,70.2
+91,91,Cage The Elephant,Tell Me I'm Pretty,72,blues,0nW0w37lrQ87k7PLZvC4qJ,225973.0,63.5
+94,94,The Black Keys,El Camino,73,blues,5DLhV9yOvZ7IxVmljMXtNm,193653.0,69.7
+95,95,The Black Keys,Turn Blue,61,blues,6TvxpBzf9c8H1fsrAaQ8t3,410186.0,61.5
+100,100,Greta Van Fleet,The Battle at Garden’s Gate,67,blues,7kjLKy9JLbwM9F7eDQEnd2,270887.0,67.0
+102,102,Cage The Elephant,Social Cues,60,blues,2VuZJsJBPLwg9BeQFQle8G,163200.0,60.0
+108,108,The Chemical Brothers,No Geography,53,breakbeat,7d1KwAPdMEBqCERVsKRUox,316680.0,41.4
+115,115,Adele,30,82,british,21jF5jlMtzo94wbxmJ18aa,225148.0,71.5
+125,125,Michael Kiwanuka,KIWANUKA,54,british,1yIqauTni1V7l7djYAKSsZ,233053.0,54.0
+126,126,Laura Marling,Song For Our Daughter,52,british,0ubXthGSkZfe30Nuj91lcu,237228.0,52.0
+127,127,Beach Fossils,Somersault,67,chill,2d7uieZPQtrUi5AQXwdsYV,158474.0,63.0
+128,128,Beach Fossils,Clash the Truth,63,chill,4qC8mysA680i7chkL3JQQw,146293.0,63.0
+129,129,Unknown Mortal Orchestra,II,67,chill,2UrexGLK8RBKbv07j7ui19,230146.0,63.0
+130,130,Blood Orange,Negro Swan,66,chill,7bvmGyFDwpHNRRRZJ0AHvn,242341.0,66.0
+131,131,Unknown Mortal Orchestra,Sex & Food,65,chill,2swiA7ANSFyAHKJhkD4mNR,268333.0,65.0
+132,132,Gesaffelstein,Aleph,51,club,3MiiF9utmtGnLVITgl0JP7,247603.0,43.3
+133,133,SOPHIE,OIL OF EVERY PEARL'S UN-INSIDES,53,club,4z3YbEkKWwiIMSJTWUQbTH,232806.0,44.8
+136,136,Arca,KICK ii,60,club,1Vg5v9M0afj5sIl1ndRXzy,151531.0,51.2
+144,144,SOPHIE,VYZEE,49,club,619AAL08eHbip6ce8Jixbe,202531.0,49.0
+146,146,A. G. Cook;Cecile Believe,7G,47,club,16NHNs15w1bpkFiBOUgDaB,169500.0,40.2
+148,148,The Magnetic Fields,50 Song Memoir,21,club,2b3JjOvKw9UN47ND80Tvri,176426.0,21.0
+153,153,Andy Stott,Faith in Strangers,45,club,1BzMONuUlgUnqOrg2aQeAY,389186.0,45.0
+157,157,Fire-Toolz,Eternal Home,16,club,4ZyfutgwGoPLRNkJqVidZ2,158806.0,15.5
+159,159,Lil Dicky;Brendon Urie,Professional Rapper,66,comedy,7IhHBoBPWlCSrr8DCmP5ot,244339.0,56.4
+168,168,Kacey Musgraves,Golden Hour,68,country,7f6xPqyaolTiziKf5R5Z0c,219053.0,69.0
+170,170,Ariana Grande,"thank u, next",84,dance,2fYhqwDWXjbpjaIJPEfKFw,178626.0,81.3
+171,171,Ariana Grande,Positions,85,dance,3euz4vS7ezKGnNSwgyvKcd,172324.0,81.3
+172,172,Doja Cat,Planet Her,88,dance,1nAQbHeOWTfQzbOoFrvndW,172626.0,84.2
+173,173,Dua Lipa,Future Nostalgia,84,dance,7fJJK56U9fHixgO0HQkhtI,203807.0,81.0
+175,175,Katy Perry,Smile,78,dance,47zMF6LrXQ8odi6Xv1unC0,185480.0,78.0
+179,179,ZAYN,Mind Of Mine (Deluxe Edition),78,dance,5amj9zNeZ3B2EdpBgXrOZ0,202746.0,78.0
+180,180,Ariana Grande,Sweetener,80,dance,3tx8gQqWbGwqIGZHqDNrGe,197546.0,79.0
+182,182,Doja Cat,Hot Pink,83,dance,1MmVkhiwTH0BkNOU3nw5d3,226986.0,81.0
+183,183,Bruno Mars,24K Magic,83,dance,4PgleR09JVnm3zY1fW3XBA,206693.0,83.0
+188,188,Beyoncé,RENAISSANCE,93,dance,6FJxoadUE4JNVwWHghBwnb,225388.0,93.0
+189,189,Cardi B;Bad Bunny;J Balvin,Invasion of Privacy,79,dance,4KdtEKjY3Gi0mKiSdy96ML,253390.0,79.0
+192,192,Nicki Minaj,Queen Radio: Volume 1,83,dance,1ia27ME4iQkoIyUHBnJqX6,170977.0,83.0
+193,193,Gojira,Fortitude,59,death-metal,3bmdzJRZ4DLRTiA6yBBQcI,300783.0,51.5
+194,194,Meshuggah,Koloss,53,death-metal,1WzwZsb0LvVXhngbHjBfd9,372866.0,53.0
+197,197,Cannibal Corpse,Violence Unimagined,50,death-metal,1OSmlc9qUXmCPzox9m9J3l,272994.0,50.0
+202,202,Undeath,It's Time...To Rise from the Grave,22,death-metal,5pL9YDRmrXWNPEJGKiYUXs,233237.0,22.0
+204,204,Tribulation,The Children of the Night,21,death-metal,4whOD3w1OmMhEcv54ai3Ju,411786.0,21.0
+206,206,Havok,Conformicide,22,death-metal,6GI3M1qTLgDNNcZCTzgWEQ,437413.0,22.0
+207,207,Miami Horror,Illumination,59,disco,37oEeZfUpmbYlJnORF36Zk,253728.0,59.0
+208,208,Porter Robinson,Worlds,64,dub,7AJPV0L05IyIBid97AvwVD,328506.0,50.5
+210,210,Porter Robinson,Nurture,59,dub,4Hjqdhj5rh816i1dfcUEaM,309985.0,50.8
+226,226,Eliminate;Leah Culver,Crystallize,46,dub,1UNZ0fFbN1JHhbjJRRuhAn,212800.0,46.0
+231,231,Mac DeMarco,Salad Days,82,edm,2sij95QgjmgrhNv33achzn,231723.0,82.0
+232,232,Mac DeMarco,2,81,edm,2XgBQwGRxr4P7cHLDYiqrO,190845.0,81.0
+233,233,Billie Eilish,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",84,electro,0S0KGZnfBGSIssfF54WSJh,194087.0,78.0
+235,235,Daft Punk;Julian Casablancas,Random Access Memories,76,electro,4m2880jivSbbyEGAKfITCa,337560.0,75.5
+236,236,Billie Eilish,Happier Than Ever,73,electro,0JGOiO34nwfUdDrD612dOp,173539.0,76.1
+238,238,Ashnikko,DEMIDEVIL,72,electro,438ToDoVaJH5aTIXXrlDyI,146523.0,72.0
+248,248,Carly Rae Jepsen,Emotion (Deluxe Expanded Edition),70,electro,2oj3FG6fos7zAQJxLQGzou,204763.0,70.0
+250,250,James Blake;SZA,Friends That Break Your Heart,65,electronic,1zNtJFMCNIyT0X19jpcI3j,195905.0,65.0
+251,251,Metronomy,The English Riviera,71,electronic,716fnrS2qXChPC3J2X73pK,277653.0,71.0
+252,252,James Blake,Overgrown,64,electronic,53FEYOXnplxBWoQMmWn82U,223600.0,64.0
+253,253,James Blake;Bon Iver,The Colour In Anything,59,electronic,1WyrGCkFDlH1xPadZ5qTkL,257219.0,59.0
+254,254,Bonobo,The North Borders,59,electronic,7sN6lCgPf1rbZYmA3edMKv,352246.0,46.2
+255,255,Chromatics,Kill For Love,52,electronic,2Fp5KBgyC0ac2oitVlsJhY,322994.0,52.0
+256,256,Tycho,Awake,58,electronic,0GjrPTT00KWsalUi8jnpR9,283636.0,58.0
+257,257,XXXTENTACION;Trippie Redd,17,83,emo,5VdyJkLe3yvOs0l4xXbWp0,146520.0,77.1
+259,259,Lil Peep;XXXTENTACION,"Come Over When You're Sober, Pt. 2",81,emo,52JymrguPgkmmwLaWIusst,196400.0,65.9
+263,263,XXXTENTACION,SKINS,72,emo,1qsQOC4Jn0fnaUZLAbs4dz,94245.0,63.1
+264,264,6ix9ine;Nicki Minaj;Murda Beatz,DUMMY BOY,72,emo,06XM9ExRELs8dcuwEAn1jd,179404.0,65.0
+265,265,Lil Pump,Lil Pump,64,emo,2VVvm4zJlUQm9XmBCvGN6z,124055.0,60.0
+269,269,6ix9ine,TattleTales,71,emo,6q8AAimjVfKuv9PrI5xto9,132303.0,56.6
+277,277,Paramore,After Laughter,75,emo,1c9Sx7XdXuMptGyfCB6hHs,182693.0,68.3
+296,296,American Football,American Football,60,emo,3wRBlpk5PRoixwOnLujTal,268333.0,60.0
+301,301,Hobo Johnson,The Fall of Hobo Johnson,55,emo,3QrkHSj8pBzE1Kwhpnktkw,215803.0,55.0
+304,304,glass beach,the first glass beach album,62,emo,5GOoswCqZQiq9gbjSHkzMq,138119.0,55.7
+309,309,Bon Iver,Bon Iver,59,folk,2LpfNj3vB5rOXfaawLcOBg,336613.0,59.0
+310,310,Arctic Monkeys,AM,92,garage,78bpIziExqiI9qztvNFlQu,183956.0,77.3
+326,326,The Strokes,Angles,68,garage,6Jx4cGhWHewTcfKDJKguBQ,235546.0,62.2
+333,333,Death From Above 1979,Outrage! Is Now,57,garage,4kKKH6cFBtNd9etSJzkMjZ,198081.0,57.0
+338,338,The Spits,The Spits,29,garage,4IH4X1p5E6WjigQdS1Z5B6,72000.0,26.5
+340,340,Foxygen,We Are the 21st Century Ambassadors of Peace & Magic,57,garage,7FfiN9ztbjLNPWhuhFHaWf,201706.0,57.0
+342,342,Jack White,Lazaretto,58,garage,36LXzRarDP8TU8K0REGpt6,219400.0,58.0
+343,343,Ariel Pink;DāM-FunK,Mature Themes,56,garage,08RdKFNm8Cu86FSzlhoAoh,287426.0,56.0
+344,344,Ariel Pink,pom pom,54,garage,1GDEy7JQHzOvAIucRlXtGL,200293.0,54.0
+345,345,Tony Molina,Dissed and Dismissed,27,garage,0M9cDMEpqJgz6V6AynA7Sy,72339.0,24.7
+347,347,Balkans,Balkans,24,garage,0vAzZE6Z6Jw05CpjxAqKo3,169506.0,24.0
+349,349,Jack White,Fear Of The Dawn,54,garage,46qeiLBu3KwqFQpJBT7t6B,214842.0,54.0
+350,350,Cattle Decapitation,Death Atlas,46,grindcore,7pp0eBrLEcmprISZOmY4ve,268080.0,41.2
+351,351,Trap Them,Darker Handcraft,19,grindcore,5mdfU5YxMPnwFwJQMC9rBj,203066.0,16.8
+353,353,Full Of Hell,Full of Hell & Merzbow,21,grindcore,5TOfimDwyiJ71grEQMd9UH,55955.0,16.6
+356,356,Trap Them,Blissfucker,16,grindcore,4UvIV3bGAXNEfTzJp1Wl5w,256351.0,14.3
+370,370,Cattle Decapitation,The Anthropocene Extinction,36,grindcore,4QUiNabvDucY1hn8LRmbGd,247186.0,36.0
+374,374,Wormrot,Hiss,37,grindcore,6XfFWtshKIYvwjI6qAqR8m,87786.0,37.0
+375,375,Foo Fighters,Wasting Light,70,grunge,5lnQLEUiVDkLbFJHXHQu9m,255960.0,65.0
+376,376,Foo Fighters,Concrete and Gold,65,grunge,6KMkuqIwKkwUhUYRPL6dUc,244573.0,63.0
+379,379,Foo Fighters,Medicine At Midnight,56,grunge,1FyNZvJ6MHO01kl3ySMPdc,255106.0,54.0
+382,382,Ghost,IMPERA,72,hard-rock,3fn4HfVz5dhmE0PG24rh6h,196946.0,67.8
+386,386,Crystal Castles,Crystal Castles,69,hardcore,7HJSVyFzG1sM02weSAqhdH,258453.0,66.0
+388,388,Nas;A$AP Rocky;DJ Premier,Magic,61,hardcore,1tiCHRx9AI11hfcLmkGEXT,190261.0,57.0
+389,389,Nas;Eminem;EPMD,King's Disease II,56,hardcore,6CM5qhYBvpgYNek5kYwuOJ,214434.0,55.5
+393,393,The Roots;John Legend,How I Got Over,56,hardcore,25sYZjutddzUpXNbeQ7bEC,221066.0,56.0
+394,394,Crystal Castles,Amnesty (I),55,hardcore,03CgI5yzuOcyRkkDOyCazP,188333.0,55.0
+396,396,Lil Nas X,MONTERO,87,hip-hop,6pOiDiuDQqrmo5DbG0ZubR,143901.0,83.7
+398,398,Drake,Scorpion,84,hip-hop,1ATL5GLyefJaxhQzSPVrLX,198973.0,84.0
+399,399,Lil Nas X,7 EP,77,hip-hop,4IRiXE5NROxknUSAUSjMoO,113000.0,78.0
+401,401,Drake;Wizkid;Kyla,Views,85,hip-hop,40GMAhriYJRO1rsY4YdrZb,173986.0,85.0
+402,402,Eminem;Juice WRLD,Music To Be Murdered By,83,hip-hop,4otkd9As6YaxxEkIjXPiZ6,210800.0,83.0
+403,403,Kendrick Lamar;SZA,Black Panther The Album Music From And Inspired By,83,hip-hop,3pLdWdkj83EYfDN6H2N8MR,232186.0,83.0
+404,404,J. Cole,2014 Forest Hills Drive,88,hip-hop,0UMMIkurRUmkruZ3KGBLtG,292799.0,88.0
+406,406,Kendrick Lamar,DAMN.,84,hip-hop,4eLPsYPBmXABThSJ821sqY,177000.0,84.0
+407,407,Metro Boomin;Gunna,NOT ALL HEROES WEAR CAPES (Deluxe),81,hip-hop,3IO8IPjwXuzPJnoaqkwYrj,203266.0,81.0
+408,408,Eminem,The Marshall Mathers LP2 (Deluxe),78,hip-hop,6DN7GcZF1HywzrkGN6Eeqk,363521.0,78.0
+409,409,Kendrick Lamar,Mr. Morale & The Big Steppers,83,hip-hop,79ONNoS4M9tfIA1mYLBYVX,195950.0,82.5
+410,410,Drake;Travis Scott,Certified Lover Boy,83,hip-hop,3SpBlxme9WbeQdI9kx7KAV,291175.0,83.0
+412,412,Future;Drake;Tems,I NEVER LIKED YOU,89,hip-hop,6tE9Dnp2zInFij4jKssysL,189893.0,89.0
+413,413,Travis Scott,ASTROWORLD,83,hip-hop,41GuZcammIkupMPKH2OJ6I,312820.0,75.6
+414,414,A$AP Rocky;Skepta,TESTING,82,hip-hop,3MATDdrpHmQCmuOcozZjDa,205040.0,82.0
+415,415,J. Cole;Cults;Amber Coffman,Born Sinner (Deluxe Version),82,hip-hop,5FP9keIJnlSCKnkdVOf623,296520.0,82.0
+422,422,Travis Scott,Rodeo (Expanded Edition),74,house,4PWBTB6NYSKQwfo79I3prg,262693.0,74.0
+426,426,Luke Abbott,Holkham Drones,9,idm,2x1yXwFPvn4ssDc5vavFEi,301546.0,9.5
+428,428,Clairo,Immunity,81,indie-pop,4kkVGtCqE2NiAKosri9Rnd,188386.0,69.0
+429,429,G-Eazy;Bebe Rexha,When It's Dark Out,78,indie-pop,09Q3WwGYsQe5ognkvVkmCu,251466.0,78.0
+430,430,M.I.A.,Matangi,76,indie-pop,3dAxXNscIj0p53lBMEziYR,227520.0,76.0
+431,431,Cults,Static,81,indie-pop,6WnfWrfsfu7T9TXbHIFHX9,223746.0,81.0
+432,432,Mitski,Be the Cowboy,83,indie-pop,42cH7mrkfljkqkxA2Ip9Xq,128198.0,79.3
+433,433,Glass Animals,How To Be A Human Being,72,indie-pop,6qb9MDR0lfsN9a2pw77uJy,320654.0,69.5
+436,436,Clairo,Sling,74,indie-pop,32ium7Cxb1Xwp2MLzH2459,228922.0,74.0
+437,437,beabadoobee,Beatopia,77,indie-pop,2rhNQbqRNxiNQkDXTffe1V,177533.0,77.0
+440,440,Halsey,"If I Can’t Have Love, I Want Power",61,indie-pop,3sq0hRtlT2SYeYajr5Cx22,176413.0,61.0
+441,441,Phoebe Bridgers,Punisher,72,indie-pop,6Pp6qGEywDdofgFC1oFbSH,277676.0,72.0
+442,442,Rammstein,Zeit,72,industrial,75OE7M0wduJyffbffehHuR,244365.0,68.1
+443,443,Death Grips,The Money Store,59,industrial,1PQDjdBpHPikAodJqjzm6a,171866.0,52.0
+447,447,JPEGMAFIA,Veteran,64,industrial,51WLEfPEEkzAWurvuY6Gco,157258.0,53.4
+448,448,Marilyn Manson,Heaven Upside Down,59,industrial,6kbfR3NJmBGlgsTPAYmezz,239240.0,55.5
+449,449,JPEGMAFIA,LP!,59,industrial,4inXqcdjG79gV4m2mU8dQh,112451.0,50.2
+455,455,Death Grips,No Love Deep Web,53,industrial,08aqY8lv4zx4uaqBUpMD8a,303693.0,53.0
+459,459,JPEGMAFIA;Helena Deland,All My Heroes Are Cornballs,56,industrial,5ilsl5R2lGACTnPZMKIp7o,210569.0,55.0
+468,468,Death Grips,Government Plates,51,industrial,3T01oOjbrox1jz0pR112oV,161133.0,51.0
+471,471,Death Grips,The Powers That B,50,industrial,5Y04ylQjDWsawOUJXzY4YO,367569.0,48.5
+477,477,Death Grips,Year Of The Snitch,48,industrial,46eayJPxf1cBWWUqNa2MJJ,211661.0,48.0
+483,483,clipping.,Visions of Bodies Being Burned,46,industrial,0b1q9se93BEqBl3kiltn33,299605.0,46.0
+487,487,Fetty Wap,Fetty Wap (Deluxe),74,j-dance,2gKQvajkEEaDtkqJ8FJ4uw,222093.0,59.6
+492,492,Flying Lotus;Kendrick Lamar,You're Dead!,57,j-dance,29luvT98TnqHjVDYSRbbrj,234486.0,57.0
+493,493,Flying Lotus,Flamagra,49,j-dance,5WfDyog8yO7ZF8JdJxeZfl,71520.0,50.5
+498,498,BABYMETAL,METAL RESISTANCE,54,j-idol,2vIRdYffs93ca7L0Eh4mTm,263173.0,48.0
+501,501,Sharon Van Etten,Remind Me Tomorrow,59,j-rock,4bfvR9TMwCm2tzXpboLH3t,265920.0,59.0
+502,502,Sharon Van Etten,Are We There,60,j-rock,6EQWzHbd3EYO8J4EAIJst4,262520.0,60.0
+503,503,BADBADNOTGOOD;Samuel T. Herring,IV,71,jazz,5wAGlQICfKYQfaBppnUbmP,273864.0,57.0
+504,504,BTS;Halsey,MAP OF THE SOUL : PERSONA,80,k-pop,2KqlAl1Kl5fZvbFgJ0qFB6,229773.0,70.9
+505,505,BTS,Love Yourself 轉 'Tear',76,k-pop,4NIqCxqP9o8Tp6tGLBqd8O,242333.0,70.6
+506,506,BTS,MAP OF THE SOUL : 7,76,k-pop,5W1XY5ucNATjTULERvXx9j,180220.0,68.2
+526,526,Jack Harlow,Come Home The Kids Miss You,79,k-pop,2eE8BVirX9VF8Di9hD90iw,173947.0,78.0
+540,540,Jack Harlow,Thats What They All Say,74,k-pop,5g2INX6dnMIJG0xKygXwF3,156578.0,74.0
+545,545,Bad Bunny;Chencho Corleone,Un Verano Sin Ti,97,latin,3RQQmkQEvNCY4prGKE6oc5,178567.0,88.6
+552,552,Bad Bunny;Jhay Cortez,EL ÚLTIMO TOUR DEL MUNDO,80,latin,2d9BCZeAAhiZWPpbX9aPCW,205090.0,81.0
+557,557,Bad Bunny;Drake,X 100PRE,65,latino,7CjJb2mikwAWA1V6kewFBF,210367.0,75.0
+572,572,Bring Me The Horizon,Sempiternal (Expanded Edition),81,metal,6IYPmM3xsOPL2XPSvf1ZAz,228146.0,61.2
+573,573,Bring Me The Horizon;BABYMETAL,POST HUMAN: SURVIVAL HORROR,72,metal,0e1WaSNDZnoPixaxDNdWo4,220041.0,63.8
+574,574,Deftones,Diamond Eyes,75,metal,1GjjBpY2iDwSQs5bykQI5e,241533.0,75.0
+579,579,Steven Wilson,The Raven That Refused to Sing (and Other Stories),47,metal,2xJFvV7JzoYYMere5rqjVf,457250.0,47.0
+581,581,TOOL,Fear Inoculum,64,metal,7acEciVtnuTzmwKptkjth5,713191.0,64.0
+583,583,Deftones,Koi No Yokan,73,metal,4PIVdqvL1Rc7T7Vfsr8n8Q,413346.0,73.0
+585,585,Bring Me The Horizon,amo,61,metalcore,04mkS7FooK8fRbB626T9NR,227265.0,57.7
+595,595,Loathe,I Let It in and It Took Everything,62,metalcore,6nUUV3haj8ug8okTmOyIU2,287627.0,57.3
+611,611,OneRepublic,"I Ain’t Worried (Music From The Motion Picture ""Top Gun: Maverick"")",96,piano,04PEOM6kIEeq9lRp1asNP2,148485.0,96.0
+612,612,Fiona Apple,Fetch The Bolt Cutters,59,piano,0fO1KemWL2uCCQmM22iKlj,237713.0,59.0
+613,613,The Weeknd,After Hours,91,pop,4yP0hdKOZPNshxUOjY0cZj,200040.0,90.0
+614,614,The Weeknd;Daft Punk,Starboy,90,pop,2ODvWsOgouMbaA5xf0RkJe,230453.0,89.0
+615,615,Ed Sheeran,÷ (Deluxe),87,pop,3T4tUhGYeRNVUGevb0wThu,263400.0,86.5
+617,617,The Weeknd;Gesaffelstein,"My Dear Melancholy,",90,pop,4qZBW3f2Q8y0k1A84d4iAO,241066.0,89.5
+618,618,Justin Bieber,Justice,88,pop,5dGWwsZ9iB2Xc3UKR0gif2,153190.0,87.0
+620,620,Harry Styles,Fine Line,89,pop,7xV2TzoaVc0ycW7fwBwAml,174000.0,89.0
+622,622,Harry Styles,Harry's House,92,pop,5r36AJ6VOJtp00oxSkBZ5h,167303.0,92.0
+624,624,Coldplay,A Head Full of Dreams,85,pop,3cfAM8b8KqJRoIzt3zLKqw,258266.0,85.0
+625,625,Justin Bieber,Purpose (Deluxe),84,pop,6Fr2rQkZ383FcMqFyT7yPr,233720.0,83.0
+626,626,Olivia Rodrigo,SOUR,88,pop,6s84u2TUpR3wdUv4NgKA2j,242013.0,87.4
+627,627,The Weeknd,Beauty Behind The Madness,88,pop,0P3oVJBFOv3TDXlYRhGL7s,242253.0,88.0
+630,630,Taylor Swift,folklore,86,pop,2fenSS68JI1h4Fo296JfGr,261922.0,86.0
+634,634,Taylor Swift,reputation,88,pop,6DEjYFkNZh67HP7R9PSZvv,236413.0,88.0
+637,637,Taylor Swift,Lover,85,pop,1NAmidJlEaVgA3MpcPFYGq,221306.0,85.0
+638,638,Weezer,Weezer,77,power-pop,1xpGyKyV26uPstk1Elgp9Q,258826.0,66.3
+643,643,Weezer,OK Human,52,power-pop,0dL9rGQxUeIqpiUndXaQLl,202703.0,47.5
+644,644,Weezer,SZNZ: Summer,56,power-pop,1DvBf2E2OgU8HAjgInLT6H,208920.0,56.0
+647,647,Weezer,Pacific Daydream,54,power-pop,3EwfQtjvyRAXsPWAKO5FDP,195893.0,54.0
+650,650,The New Pornographers,Together,22,power-pop,5xB1vlldYNgaPU9HGBmr4x,212786.0,22.0
+652,652,Beach Slang,The Things We Do To Find People Who Feel Like Us,21,power-pop,7MV1nOXOJ2AD5387yP9e5R,149130.0,21.0
+654,654,Pond,Man It Feels Like Space Again,52,psych-rock,60aAmcYX5tw7r9ZQ1HF34q,283394.0,48.5
+656,656,Unknown Mortal Orchestra,Multi-Love,60,psych-rock,2aoI8tkPq9NBvGiARD0KoR,250800.0,60.0
+657,657,The Avalanches,Wildflower,57,psych-rock,0j0djiGxLnBiW7meVc2PER,252800.0,57.0
+658,658,The Avalanches;MGMT;Johnny Marr,We Will Always Love You,60,psych-rock,755yBlrk0Sz8tIgMMTgyr1,187586.0,57.5
+660,660,Perfume Genius,Too Bright,51,psych-rock,571wQuGuOOLTbbyYoujGra,230719.0,51.0
+662,662,Black Mountain,IV,43,psych-rock,6htkNwZqRyGKXjWpCKuoSl,544070.0,57.0
+663,663,Parquet Courts,Human Performance,26,psych-rock,234xgzAxSozAKfXeLb2ofh,171746.0,26.0
+664,664,blink-182,NINE,64,punk-rock,4gARZz9eV7zbGbtOjhVTPF,191066.0,64.0
+666,666,Conway the Machine;Ludacris;JID,La Maquina,66,r-n-b,35C2QYq4OgkEXETksStyzz,209117.0,66.0
+667,667,Twenty One Pilots,Blurryface,82,rock,3cQO7jp5S9qLBoIVtbkSM1,214506.0,83.5
+669,669,Twenty One Pilots,Trench,76,rock,621cXqrTSSJi1WqDMSLmbL,324466.0,76.0
+671,671,Aries,WELCOME HOME,58,sad,2NDlOOZNBvq6B26feV4gJc,180789.0,56.4
+678,678,Sufjan Stevens,Carrie & Lowell,81,singer-songwriter,64xtjfsPHNHch0CZ7fPTjS,279316.0,68.8
+682,682,Descendents,Hypercaffium Spazzinate (Deluxe Edition),32,ska,2hGGxQXnZpKXPmQJUgLGXS,105864.0,32.0
+683,683,Frank Ocean,Blonde,85,soul,3mH6qwIy9crq0I9YQbOuDf,184516.0,73.6
+684,684,Frank Ocean,channel ORANGE,85,soul,392p3shh2jkxUxY2VHvlH8,234093.0,75.2
+696,696,The Internet;KAYTRANADA,Ego Death,68,soul,69g3CtOVg98TPOwqmI2K7Q,415613.0,68.0
+697,697,Dijon,Absolutely,69,soul,4E691gbRgo2Zb6ToII2DWO,184767.0,69.0
+702,702,ABBA,Voyage,52,swedish,0uUtGVj0y9FjfKful7cABY,309160.0,56.3
+708,708,Chairlift,Something,56,synth-pop,4nYzn3xOXQsltWZ5AIQns7,207306.0,56.0
+709,709,La Roux,Trouble In Paradise,25,synth-pop,5RDoYTf4YYNQby1ECCwR2C,246179.0,25.0
+710,710,FKA twigs;The Weeknd,CAPRISONGS,60,trip-hop,3G77BQuJy3jahjdkKQNNNM,196760.0,52.3
+712,712,FKA twigs,MAGDALENE,63,trip-hop,3DMR3yM5crnt1dG9lLaMTZ,204066.0,53.2
+732,732,Little Dragon,Ritual Union,59,trip-hop,1BQVdofe7ROnSoaiC9418p,210266.0,59.0
+737,737,Boards of Canada,Tomorrow's Harvest,42,trip-hop,159ORixBSSemxiualv1Woj,287403.0,42.0

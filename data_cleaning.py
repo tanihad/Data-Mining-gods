@@ -42,3 +42,28 @@ album_ratings_df = album_ratings_df.rename(columns={'popularity': 'Album Rating'
 # Merge the average ratings DataFrame with the original DataFrame based on album names
 df_merged = pd.merge(dfGrouping, album_ratings_df, on='album_name', how='left')
 df_merged.to_csv('final_cleaned_data.csv')
+
+# The above code is create an almost fully-clean file:
+# However since multiple songs can belong to the same album we need to remove the duplicate album occurences
+# Since we only care about the Albums.
+# We need to create a final file that only contains the following data:
+# 1. Album Name, 2. Spotify Album ID, 3. Spotify Album Rating, 4. Fantana Album Rating
+
+#Remove Duplicate Album ID:
+mergedCSV = pd.read_csv('final_cleaned_data.csv')
+mergedCSV.drop_duplicates(subset=['album_id'], keep='first',inplace=True)
+
+# Remove redundant Columns:
+columnsToRemove = ['Unnamed: 0_x','track_id','track_name','duration_ms','explicit_x','danceability_x', 'energy_x','key_x',
+                   'loudness_x','mode_x','speechiness_x','acousticness_x','instrumentalness_x','liveness_x',
+                   'valence_x','tempo_x','time_signature','Unnamed: 0_y','youtube_id','explicit_y','preview',
+                   'danceability_y', 'energy_y', 'key_y','loudness_y', 'mode_y', 'speechiness_y', 'acousticness_y', 'instrumentalness_y',
+                   'liveness_y','valence_y', 'tempo_y']
+mergedCSV.drop(columns=columnsToRemove, inplace=True)
+mergedCSV.to_csv('CLEAN_DATA.csv')
+
+# Adding Anthony Fantanas Ratings to the Final CSV:
+fantanaRatings = df1['rating']
+#fantanaAlbumNames = df1['project_name']
+mergedFinalCSV = pd.merge(mergedCSV, fantanaRatings, on='album_name', how='left')
+mergedFinalCSV.to_csv('FINAL_CLEAN_FILE.csv')

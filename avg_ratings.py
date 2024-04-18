@@ -28,12 +28,9 @@ for index, row in combinedDataFrame.iterrows():
     spotifyRating = row['Album Rating']
     fantanaRating = 1
 
-    try:
-        fantanaRating = fantanaDataFrame.loc[currentSpotifyAlbumID, 'rating'] * 10
-        ratingTuple = (currentSpotifyAlbumID, currentAlbum, min(fantanaRating / spotifyRating, spotifyRating / fantanaRating))
-        print(ratingTuple)
-    except:
-        print('Album Not Found')
+    fantanaRating = fantanaDataFrame.loc[currentSpotifyAlbumID, 'rating'] * 10
+    ratingTuple = (currentSpotifyAlbumID, currentAlbum, min(fantanaRating / spotifyRating, spotifyRating / fantanaRating))
+    print(ratingTuple)
 
     # Initializing a tuple that stores the spotify Album ID and how and a ratio describing how similar
     # Anthony Fantana and Spotify rated the album -- the closer the ratio is to 1.0 the more the ratings
