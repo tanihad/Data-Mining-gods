@@ -63,7 +63,18 @@ mergedCSV.drop(columns=columnsToRemove, inplace=True)
 mergedCSV.to_csv('CLEAN_DATA.csv')
 
 # Adding Anthony Fantanas Ratings to the Final CSV:
-fantanaRatings = df1['rating']
-#fantanaAlbumNames = df1['project_name']
-mergedFinalCSV = pd.merge(mergedCSV, fantanaRatings, on='album_name', how='left')
-mergedFinalCSV.to_csv('FINAL_CLEAN_FILE.csv')
+clean_data = pd.read_csv('CLEAN_DATA.csv')
+
+# Load the Fantano album ratings
+fantano_albums = pd.read_csv('Fanta/Music review/albums.csv')
+
+# Merge Fantano's album ratings with your clean data on 'album_id' (Spotify's) and 'spotify_id' (Fantano's)
+final_data = pd.merge(clean_data, fantano_albums[['spotify_id', 'rating']],
+                      left_on='album_id', right_on='spotify_id', how='left')
+
+# Now that the ratings are merged, 'spotify_id' column is no longer needed
+# So we drop it from our final dataframe
+final_data.drop(columns=['spotify_id'], inplace=True)
+
+# Save the final dataframe to a new CSV file
+final_data.to_csv('FINAL_CLEAN_FILE.csv', index=False)
