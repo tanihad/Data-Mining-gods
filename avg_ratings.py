@@ -85,9 +85,6 @@ def graphdiffs1():
     plt.show()
 
 def genrecomp():
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import numpy as np
 
     # Load the data from the CSV file
     data = pd.read_csv('FINAL_CLEAN_FILE.csv')
