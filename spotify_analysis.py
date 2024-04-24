@@ -115,13 +115,9 @@ def analyze_danceability_energy(csv_file_path):
     plt.title('Density Heatmap of Danceability vs Energy with Regression Line')
     plt.show()
 
-def correverything():
-    df = pd.read_csv("Spotify/spotify_dataset.csv")
-
-    # Define the attributes to plot
+def correverything_spotify(file):
+    df = pd.read_csv(file)
     attributes = ['danceability', 'energy', 'popularity']
-
-    # Create a figure with subplots
     fig, axes = plt.subplots(nrows=1, ncols=len(attributes), figsize=(15, 5))
 
     # Plot histograms for each attribute
@@ -178,9 +174,40 @@ def correverything():
     plt.ylabel('Predicted Popularity')
     plt.title('Actual vs Predicted Popularity Hexbin Plot')
     plt.show()
+
+
+def correverything_fanta(file):
+    df = pd.read_csv(file)
+    attributes = ['danceability', 'energy','acousticness' ]
+    fig, axes = plt.subplots(nrows=1, ncols=len(attributes), figsize=(15, 5))
+
+    # Plot histograms for each attribute
+    for ax, attribute in zip(axes, attributes):
+        sns.histplot(df[attribute], bins=30, kde=False, ax=ax)
+        ax.set_title(f'Distribution of {attribute.capitalize()}')
+        ax.set_xlabel(f'{attribute.capitalize()} Rating')
+        ax.set_ylabel('Number of Songs')
+
+    # Display the plots
+    plt.tight_layout()
+    plt.show()
+
+    # Exploratory Data Analysis using pairplot with histograms
+    sns.pairplot(df[['danceability', 'energy', 'acousticness']], diag_kind='hist', diag_kws={'bins': 30})
+    plt.show()
+
+    # Correlation Matrix
+    correlation_matrix = df[['danceability', 'energy', 'acousticness']].corr()
+    print(correlation_matrix)
+    sns.heatmap(correlation_matrix, annot=True)
+    plt.show()
+
+
+
 # Example usage:
 if __name__ == '__main__':
     # analyze_danceability_popularity("Spotify/spotify_dataset.csv")
     # analyze_energy_popularity("Spotify/spotify_dataset.csv")
-    # analyze_danceability_energy("Spotify/spotify_dataset.csv")
-    correverything()
+    #analyze_danceability_energy("Spotify/spotify_dataset.csv")
+    #correverything_spotify("Spotify/spotify_dataset.csv")
+    correverything_fanta("Fanta/Music review/tracks.csv")
