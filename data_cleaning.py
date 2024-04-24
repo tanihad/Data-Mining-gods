@@ -55,10 +55,9 @@ def cleanfile():
     mergedCSV.drop_duplicates(subset=['album_id'], keep='first', inplace=True)
 
     # Remove redundant Columns:
-    columnsToRemove = ['Unnamed: 0_x', 'track_id', 'track_name', 'duration_ms', 'explicit_x', 'danceability_x',
-                       'energy_x', 'key_x',
-                       'loudness_x', 'mode_x', 'speechiness_x', 'acousticness_x', 'instrumentalness_x', 'liveness_x',
-                       'valence_x', 'tempo_x', 'time_signature', 'Unnamed: 0_y', 'youtube_id', 'explicit_y', 'preview',
+    columnsToRemove = ['Unnamed: 0_x', 'track_id', 'track_name', 'explicit_x', 'key_x',
+                       'loudness_x', 'speechiness_x', 'instrumentalness_x', 'liveness_x', 'Unnamed: 0_y',
+                       'youtube_id', 'explicit_y', 'preview',
                        'danceability_y', 'energy_y', 'key_y', 'loudness_y', 'mode_y', 'speechiness_y', 'acousticness_y',
                        'instrumentalness_y',
                        'liveness_y', 'valence_y', 'tempo_y', 'popularity']
@@ -116,3 +115,4 @@ def avg_danceability():
 
 if __name__ == '__main__':
     avg_danceability()
+    cleanfile()
