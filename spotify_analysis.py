@@ -175,6 +175,65 @@ def correverything_spotify(file):
     plt.title('Actual vs Predicted Popularity Hexbin Plot')
     plt.show()
 
+def correverything_spotify1(file):
+    df = pd.read_csv(file)
+    attributes = ['danceability', 'energy', 'acousticness']
+    fig, axes = plt.subplots(nrows=1, ncols=len(attributes), figsize=(15, 5))
+
+    # Plot histograms for each attribute
+    for ax, attribute in zip(axes, attributes):
+        sns.histplot(df[attribute], bins=30, kde=False, ax=ax)
+        ax.set_title(f'Distribution of {attribute.capitalize()}')
+        ax.set_xlabel(f'{attribute.capitalize()} Rating')
+        ax.set_ylabel('Number of Songs')
+
+    # Display the plots
+    plt.tight_layout()
+    plt.show()
+
+    # Exploratory Data Analysis using pairplot with histograms
+    sns.pairplot(df[attributes], diag_kind='hist', diag_kws={'bins': 30})
+    plt.show()
+
+    # Correlation Matrix
+    correlation_matrix = df[attributes].corr()
+    print(correlation_matrix)
+    sns.heatmap(correlation_matrix, annot=True)
+    plt.show()
+
+    # Clustering to find patterns (Standardization included)
+    scaler = StandardScaler()
+    data_scaled = scaler.fit_transform(df[attributes])
+
+    kmeans = KMeans(n_clusters=3, random_state=42)
+    clusters = kmeans.fit_predict(data_scaled)
+    df['cluster'] = clusters
+
+    # Visualize clusters using hexbin plots to aggregate data
+    grid = sns.JointGrid(data=df, x='energy', y='acousticness', space=0)
+    grid.plot_joint(plt.hexbin, gridsize=30, cmap='viridis', mincnt=1)
+    sns.kdeplot(df['energy'], ax=grid.ax_marg_x, legend=False)
+    sns.kdeplot(df['acousticness'], ax=grid.ax_marg_y, vertical=True, legend=False)
+    plt.suptitle("Clustered Data on Energy vs Acousticness with Density Marginals")
+    plt.show()
+
+    # Regression Analysis
+    X = df[['danceability', 'energy']]
+    y = df['acousticness']
+    model = LinearRegression()
+    model.fit(X, y)
+    df['predicted_acousticness'] = model.predict(X)
+
+    # Plot regression results using a hexbin plot for aggregation
+    plt.figure(figsize=(10, 6))
+    plt.hexbin(df['acousticness'], df['predicted_acousticness'], gridsize=50, cmap='Reds', mincnt=1)
+    plt.colorbar(label='Count in bin')
+    plt.plot([df['acousticness'].min(), df['acousticness'].max()],
+             [df['acousticness'].min(), df['acousticness'].max()], 'k--')
+    plt.xlabel('Actual Acousticness')
+    plt.ylabel('Predicted Acousticness')
+    plt.title('Actual vs Predicted Acousticness Hexbin Plot')
+    plt.show()
 
 def correverything_fanta(file):
     df = pd.read_csv(file)
@@ -211,3 +270,4 @@ if __name__ == '__main__':
     #analyze_danceability_energy("Spotify/spotify_dataset.csv")
     #correverything_spotify("Spotify/spotify_dataset.csv")
     correverything_fanta("Fanta/Music review/tracks.csv")
+    #correverything_spotify1("Spotify/spotify_dataset.csv")
