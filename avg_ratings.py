@@ -118,8 +118,8 @@ def genrecomp():
     bar_width = 0.35
 
     # Plotting each set of bars for Spotify and Fantana
-    rects1 = ax.bar(x - bar_width / 2, genre_averages['Album Rating'], bar_width, label='Spotify', color='blue')
-    rects2 = ax.bar(x + bar_width / 2, genre_averages['Fantana Scaled Rating'], bar_width, label='Fantana', color='red')
+    rects1 = ax.bar(x - bar_width / 2, genre_averages['Album Rating'], bar_width, label='Spotify', color='#EBC483')
+    rects2 = ax.bar(x + bar_width / 2, genre_averages['Fantana Scaled Rating'], bar_width, label='Fantana', color='#8ED3C2')
 
     # Adding some text for labels, title, and custom x-axis tick labels, etc.
     ax.set_xlabel('Genre')
