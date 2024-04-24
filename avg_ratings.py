@@ -17,6 +17,7 @@ total_id = len(combinedDataFrame)
 
 # Starting sums to calculate the average rating for Fantanas and
 averageDifferentialSum = 0
+songSet = set()
 
 
 for index, row in combinedDataFrame.iterrows():
@@ -26,15 +27,21 @@ for index, row in combinedDataFrame.iterrows():
 
     spotifyRating = row['Album Rating']
     fantanaRating = row['rating'] * 10
-    averageDifferentialSum += abs(spotifyRating - fantanaRating)
 
-    similarityratio = min(fantanaRating / spotifyRating, spotifyRating / fantanaRating)
+    if currentSpotifyAlbumID not in songSet:
+        averageDifferentialSum += abs(spotifyRating - fantanaRating)
+        avgValue = averageDifferentialSum / 2
 
-    ratingTuple = (currentSpotifyAlbumID, currentAlbum, "Similarity (1.0 Scale): " + similarityratio + " ")
-    print(ratingTuple)
+        # Calculating the percent difference between the Spotify Popularity rating and Fantano's Rating
+        percentDifference = (abs(spotifyRating - fantanaRating) / avgValue) * 100
+
+        ratingTuple = (currentSpotifyAlbumID, currentAlbum, percentDifference)
+        songSet.add(currentSpotifyAlbumID)
+        print(ratingTuple)
 
 ratingDifferential = averageDifferentialSum / total_id
 print("Average Rating Differential: ", ratingDifferential)
+print("Total Songs: ", len(songSet))
 
     # Initializing a tuple that stores the spotify Album ID and how and a ratio describing how similar
     # Anthony Fantana and Spotify rated the album -- the closer the ratio is to 1.0 the more the ratings

@@ -75,6 +75,7 @@ final_data = pd.merge(clean_data, fantano_albums[['spotify_id', 'rating']],
 # Now that the ratings are merged, 'spotify_id' column is no longer needed
 # So we drop it from our final dataframe
 final_data.drop(columns=['spotify_id'], inplace=True)
+final_data.drop_duplicates()
 
 # Save the final dataframe to a new CSV file
 final_data.to_csv('FINAL_CLEAN_FILE.csv', index=False)
