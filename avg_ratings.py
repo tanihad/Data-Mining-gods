@@ -27,6 +27,7 @@ for index, row in combinedDataFrame.iterrows():
 
     spotifyRating = row['Album Rating']
     fantanaRating = row['rating'] * 10
+    averageDifferentialSum += abs(spotifyRating - fantanaRating)
 
     if currentSpotifyAlbumID not in songSet:
         averageDifferentialSum += abs(spotifyRating - fantanaRating)
