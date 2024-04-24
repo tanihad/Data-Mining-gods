@@ -9,42 +9,46 @@ import pandas as pd
 # Fantana - spotify_id
 # Final - album_id
 
-combinedDataFrame = pd.read_csv('FINAL_CLEAN_FILE.csv')
-#fantanaDataFrame = pd.read_csv('Fanta/Music review/albums.csv')
-
-# Total number of IDs
-total_id = len(combinedDataFrame)
-
-# Starting sums to calculate the average rating for Fantanas and
-averageDifferentialSum = 0
-songSet = set()
 
 
-for index, row in combinedDataFrame.iterrows():
-    # For each album in the Dataframe, look up its ID in the Fantana
-    currentSpotifyAlbumID = row['album_id']
-    currentAlbum = row['album_name']
+def calculateCorrelation():
+    combinedDataFrame = pd.read_csv('FINAL_CLEAN_FILE.csv')
+    # fantanaDataFrame = pd.read_csv('Fanta/Music review/albums.csv')
 
-    spotifyRating = row['Album Rating']
-    fantanaRating = row['rating'] * 10
-    averageDifferentialSum += abs(spotifyRating - fantanaRating)
+    # Total number of IDs
+    total_id = len(combinedDataFrame)
 
-    if currentSpotifyAlbumID not in songSet:
-        averageDifferentialSum += abs(spotifyRating - fantanaRating)
-        avgValue = averageDifferentialSum / 2
+    # Starting sums to calculate the average rating for Fantanas and
+    averageDifferentialSum = 0
+    songSet = set()
 
-        # Calculating the percent difference between the Spotify Popularity rating and Fantano's Rating
-        percentDifference = (abs(spotifyRating - fantanaRating) / avgValue) * 100
+    for index, row in combinedDataFrame.iterrows():
+        # For each album in the Dataframe, look up its ID in the Fantana
+        currentSpotifyAlbumID = row['album_id']
+        currentAlbum = row['album_name']
 
-        ratingTuple = (currentSpotifyAlbumID, currentAlbum, percentDifference)
-        songSet.add(currentSpotifyAlbumID)
-        print(ratingTuple)
+        spotifyRating = row['Album Rating']
+        fantanaRating = row['rating'] * 10
 
-ratingDifferential = averageDifferentialSum / total_id
-print("Average Rating Differential: ", ratingDifferential)
-print("Total Songs: ", len(songSet))
+        if currentSpotifyAlbumID not in songSet:
+            print(spotifyRating, fantanaRating)
+            avgValue = (spotifyRating + fantanaRating) / 2
+
+            # Calculating the percent difference between the Spotify Popularity rating and Fantano's Rating
+            percentDifference = (abs(spotifyRating - fantanaRating) / avgValue) * 100
+            averageDifferentialSum += percentDifference
+            ratingTuple = (currentSpotifyAlbumID, currentAlbum, percentDifference)
+            songSet.add(currentSpotifyAlbumID)
+            print(ratingTuple)
+
+    ratingDifferential = averageDifferentialSum / len(songSet)
+    print("Average Percent Differential: ", ratingDifferential)
+    print("Total Songs: ", len(songSet))
 
     # Initializing a tuple that stores the spotify Album ID and how and a ratio describing how similar
     # Anthony Fantana and Spotify rated the album -- the closer the ratio is to 1.0 the more the ratings
     # 'agreed' with each other
+
+if __name__ == '__main__':
+    calculateCorrelation()
 
