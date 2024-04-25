@@ -1,4 +1,4 @@
-import pandas as pd 
+import pandas as pd
 
 
 def cleanfile():
@@ -57,7 +57,7 @@ def cleanfile():
     # Remove redundant Columns:
     columnsToRemove = ['Unnamed: 0_x', 'track_id', 'track_name', 'explicit_x', 'key_x',
                        'loudness_x', 'speechiness_x', 'instrumentalness_x', 'liveness_x', 'Unnamed: 0_y',
-                       'youtube_id', 'explicit_y', 'preview',
+                       'youtube_id', 'explicit_y', 'preview','danceability_x', 'acousticness_x','tempo_x','time_signature','duration_ms',
                        'danceability_y', 'energy_y', 'key_y', 'loudness_y', 'mode_y', 'speechiness_y', 'acousticness_y',
                        'instrumentalness_y',
                        'liveness_y', 'valence_y', 'tempo_y', 'popularity']
