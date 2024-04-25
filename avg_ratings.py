@@ -83,19 +83,21 @@ def graphdiffs1():
     plt.show()
 
 def genrecomp():
-
     # Load the data from the CSV file
     data = pd.read_csv('FINAL_CLEAN_FILE.csv')
 
     # Scale the Fantana ratings
     data['Fantana Scaled Rating'] = data['rating'] * 10
 
+    # Print unique genres to verify content
+    print("Unique genres in dataset:", data['track_genre'].unique())
+
     # Define the genres of interest
-    selected_genres = ['rock', 'hard rock', 'metal', 'death metal', 'country', 'pop', 'edm', 'hip hop', 'jazz', 'latin',
-                       'club', 'chill']
+    selected_genres = ['rock', 'hard-rock', 'metal', 'death-metal', 'country', 'pop', 'edm', 'hip-hop', 'jazz', 'latin', 'club', 'chill']
 
     # Filter the dataset to include only the selected genres
     filtered_data = data[data['track_genre'].isin(selected_genres)]
+    print("Filtered genres:", filtered_data['track_genre'].unique())  # Debug print to check filtered genres
 
     # Group by 'track_genre' and calculate the mean for Spotify and Fantana ratings
     genre_averages = filtered_data.groupby('track_genre').agg({
@@ -105,28 +107,17 @@ def genrecomp():
 
     # Plotting
     fig, ax = plt.subplots(figsize=(14, 8))
-
-    # Location of labels on the x-axis
     x = np.arange(len(genre_averages['track_genre']))
-
-    # Width of the bars
     bar_width = 0.35
-
-    # Plotting each set of bars for Spotify and Fantana
     rects1 = ax.bar(x - bar_width / 2, genre_averages['Album Rating'], bar_width, label='Spotify', color='#EBC483')
     rects2 = ax.bar(x + bar_width / 2, genre_averages['Fantana Scaled Rating'], bar_width, label='Fantana', color='#8ED3C2')
-
-    # Adding some text for labels, title, and custom x-axis tick labels, etc.
     ax.set_xlabel('Genre')
     ax.set_ylabel('Average Ratings')
     ax.set_title('Average Ratings by Genre from Spotify and Fantana')
     ax.set_xticks(x)
     ax.set_xticklabels(genre_averages['track_genre'], rotation=45)
     ax.legend()
-
-    # Adding a bit of layout optimization
     fig.tight_layout()
-
     plt.show()
 
 
