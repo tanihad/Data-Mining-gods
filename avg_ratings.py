@@ -1,7 +1,13 @@
 import pandas as pd
 import time
-#import matplotlib.pyplot as plt
 import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+import seaborn as sns
+
+
 
 def tuplediff():
     combinedDataFrame = pd.read_csv('FINAL_CLEAN_FILE.csv')
@@ -93,57 +99,111 @@ def tuplediff():
 #     plt.grid(True)  # Adding grid for better readability
 #     plt.show()
 #
-# def genrecomp():
-#     import pandas as pd
-#     import matplotlib.pyplot as plt
-#     # Load the data from the CSV file
-#     data = pd.read_csv('FINAL_CLEAN_FILE.csv')
-#
-#     # Scale the Fantana ratings
-#     data['Fantana Scaled Rating'] = data['rating'] * 10
-#
-#     # Define the genres of interest
-#     selected_genres = ['rock', 'hard rock', 'metal', 'death metal', 'country', 'pop', 'edm', 'hip hop', 'jazz', 'latin',
-#                        'club', 'chill']
-#
-#     # Filter the dataset to include only the selected genres
-#     filtered_data = data[data['track_genre'].isin(selected_genres)]
-#
-#     # Group by 'track_genre' and calculate the mean for Spotify and Fantana ratings
-#     genre_averages = filtered_data.groupby('track_genre').agg({
-#         'Album Rating': 'mean',
-#         'Fantana Scaled Rating': 'mean'
-#     }).reset_index()
-#
-#     # Plotting
-#     fig, ax = plt.subplots(figsize=(14, 8))
-#
-#     # Location of labels on the x-axis
-#     x = np.arange(len(genre_averages['track_genre']))
-#
-#     # Width of the bars
-#     bar_width = 0.35
-#
-#     # Plotting each set of bars for Spotify and Fantana
-#     rects1 = ax.bar(x - bar_width / 2, genre_averages['Album Rating'], bar_width, label='Spotify', color='#EBC483')
-#     rects2 = ax.bar(x + bar_width / 2, genre_averages['Fantana Scaled Rating'], bar_width, label='Fantana', color='#8ED3C2')
-#
-#     # Adding some text for labels, title, and custom x-axis tick labels, etc.
-#     ax.set_xlabel('Genre')
-#     ax.set_ylabel('Average Ratings')
-#     ax.set_title('Average Ratings by Genre from Spotify and Fantana')
-#     ax.set_xticks(x)
-#     ax.set_xticklabels(genre_averages['track_genre'], rotation=45)
-#     ax.legend()
-#
-#     # Adding a bit of layout optimization
-#     fig.tight_layout()
-#
-#     plt.show()
+def genrecomp():
 
+    # Load the data from the CSV file
+    data = pd.read_csv('FINAL_CLEAN_FILE.csv')
+
+    # Scale the Fantana ratings
+    data['Fantana Scaled Rating'] = data['rating'] * 10
+
+    # Define the genres of interest
+    selected_genres = ['rock', 'hard rock', 'metal', 'death metal', 'country', 'pop', 'edm', 'hip hop', 'jazz', 'latin',
+                       'club', 'chill']
+
+    # Filter the dataset to include only the selected genres
+    filtered_data = data[data['track_genre'].isin(selected_genres)]
+
+    # Group by 'track_genre' and calculate the mean for Spotify and Fantana ratings
+    genre_averages = filtered_data.groupby('track_genre').agg({
+        'Album Rating': 'mean',
+        'Fantana Scaled Rating': 'mean'
+    }).reset_index()
+
+    # Plotting
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # Location of labels on the x-axis
+    x = np.arange(len(genre_averages['track_genre']))
+
+    # Width of the bars
+    bar_width = 0.35
+
+    # Plotting each set of bars for Spotify and Fantana
+    rects1 = ax.bar(x - bar_width / 2, genre_averages['Album Rating'], bar_width, label='Spotify', color='#EBC483')
+    rects2 = ax.bar(x + bar_width / 2, genre_averages['Fantana Scaled Rating'], bar_width, label='Fantana', color='#8ED3C2')
+
+    # Adding some text for labels, title, and custom x-axis tick labels, etc.
+    ax.set_xlabel('Genre')
+    ax.set_ylabel('Average Ratings')
+    ax.set_title('Average Ratings by Genre from Spotify and Fantana')
+    ax.set_xticks(x)
+    ax.set_xticklabels(genre_averages['track_genre'], rotation=45)
+    ax.legend()
+
+    # Adding a bit of layout optimization
+    fig.tight_layout()
+
+    plt.show()
+
+
+
+#Clustering
+def genre_cluster_comp():
+    # Load the data from the CSV file
+    data = pd.read_csv('FINAL_CLEAN_FILE.csv')
+
+    # Scale the Fantana ratings
+    data['Fantana Scaled Rating'] = data['rating'] * 10
+
+    # Define the genres of interest
+    selected_genres = ['rock', 'hard-rock', 'metal', 'death-metal', 'country', 'pop', 'edm', 'hip-hop', 'jazz', 'latin',
+                       'club', 'chill']
+
+    # Filter the dataset to include only the selected genres
+    filtered_data = data[data['track_genre'].isin(selected_genres)]
+
+    # Group by 'track_genre' and calculate the mean for Spotify and Fantana ratings along with any other musical attributes available
+    genre_averages = filtered_data.groupby('track_genre').agg({
+        'Album Rating': 'mean',
+        'Fantana Scaled Rating': 'mean',
+        'tempo_x': 'mean',  # Assuming tempo is available
+        'valence_x': 'mean'  # Assuming valence is available
+    }).reset_index()
+
+    # Normalize the data for clustering
+    scaler = StandardScaler()
+    genre_features = genre_averages[['Album Rating', 'Fantana Scaled Rating', 'tempo_x', 'valence_x']]
+    scaled_features = scaler.fit_transform(genre_features)
+
+    # Clustering
+    kmeans = KMeans(n_clusters=len(selected_genres), random_state=42)
+    clusters = kmeans.fit_predict(scaled_features)
+    genre_averages['Cluster'] = clusters
+
+    # Reduce dimensions for visualization
+    pca = PCA(n_components=2)
+    principal_components = pca.fit_transform(scaled_features)
+    genre_averages['PC1'] = principal_components[:, 0]
+    genre_averages['PC2'] = principal_components[:, 1]
+
+    # Plotting
+    plt.figure(figsize=(10, 8))
+    sns.scatterplot(x='PC1', y='PC2', hue='Cluster', data=genre_averages, palette='viridis', s=100, legend=None)
+    for i, txt in enumerate(genre_averages['track_genre']):
+        plt.annotate(txt, (genre_averages['PC1'][i], genre_averages['PC2'][i]))
+
+    plt.xlabel('Principal Component 1')
+    plt.ylabel('Principal Component 2')
+    plt.title('Genre Clusters based on Ratings and Musical Attributes')
+    plt.grid(True)
+    plt.show()
 
 if __name__ == '__main__':
-    tuplediff()
+    #tuplediff()
+    #genrecomp()
+    genre_cluster_comp()
+
 
 
 
