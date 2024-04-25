@@ -177,14 +177,14 @@ def correverything_spotify(file):
 
 def correverything_spotify1(file):
     df = pd.read_csv(file)
-    attributes = ['danceability', 'energy', 'acousticness']
+    attributes = ['duration_ms', 'mode', 'valence', 'tempo', 'popularity']  # Corrected list
     fig, axes = plt.subplots(nrows=1, ncols=len(attributes), figsize=(15, 5))
 
     # Plot histograms for each attribute
     for ax, attribute in zip(axes, attributes):
         sns.histplot(df[attribute], bins=30, kde=False, ax=ax)
         ax.set_title(f'Distribution of {attribute.capitalize()}')
-        ax.set_xlabel(f'{attribute.capitalize()} Rating')
+        ax.set_xlabel(f'{attribute.capitalize()}')
         ax.set_ylabel('Number of Songs')
 
     # Display the plots
@@ -210,34 +210,42 @@ def correverything_spotify1(file):
     df['cluster'] = clusters
 
     # Visualize clusters using hexbin plots to aggregate data
-    grid = sns.JointGrid(data=df, x='energy', y='acousticness', space=0)
-    grid.plot_joint(plt.hexbin, gridsize=30, cmap='viridis', mincnt=1)
-    sns.kdeplot(df['energy'], ax=grid.ax_marg_x, legend=False)
-    sns.kdeplot(df['acousticness'], ax=grid.ax_marg_y, vertical=True, legend=False)
-    plt.suptitle("Clustered Data on Energy vs Acousticness with Density Marginals")
-    plt.show()
+    # Ensure these attributes are intended and available for visualization
+    if 'energy' in df.columns and 'acousticness' in df.columns:
+        grid = sns.JointGrid(data=df, x='energy', y='acousticness', space=0)
+        grid.plot_joint(plt.hexbin, gridsize=30, cmap='viridis', mincnt=1)
+        sns.kdeplot(df['energy'], ax=grid.ax_marg_x, legend=False)
+        sns.kdeplot(df['acousticness'], ax=grid.ax_marg_y, vertical=True, legend=False)
+        plt.suptitle("Clustered Data on Energy vs Acousticness with Density Marginals")
+        plt.show()
+    else:
+        print("Error: 'energy' or 'acousticness' not found in DataFrame.")
 
-    # Regression Analysis
-    X = df[['danceability', 'energy']]
-    y = df['acousticness']
-    model = LinearRegression()
-    model.fit(X, y)
-    df['predicted_acousticness'] = model.predict(X)
+    # This section is placeholder for relevant regression analysis; adjust variables as needed
+    # Ensure these columns exist if you continue with this example
+    if all(key in df.columns for key in ['danceability', 'energy', 'acousticness']):
+        X = df[['danceability', 'energy']]
+        y = df['acousticness']
+        model = LinearRegression()
+        model.fit(X, y)
+        df['predicted_acousticness'] = model.predict(X)
 
-    # Plot regression results using a hexbin plot for aggregation
-    plt.figure(figsize=(10, 6))
-    plt.hexbin(df['acousticness'], df['predicted_acousticness'], gridsize=50, cmap='Reds', mincnt=1)
-    plt.colorbar(label='Count in bin')
-    plt.plot([df['acousticness'].min(), df['acousticness'].max()],
-             [df['acousticness'].min(), df['acousticness'].max()], 'k--')
-    plt.xlabel('Actual Acousticness')
-    plt.ylabel('Predicted Acousticness')
-    plt.title('Actual vs Predicted Acousticness Hexbin Plot')
-    plt.show()
+        # Plot regression results using a hexbin plot for aggregation
+        plt.figure(figsize=(10, 6))
+        plt.hexbin(df['acousticness'], df['predicted_acousticness'], gridsize=50, cmap='Reds', mincnt=1)
+        plt.colorbar(label='Count in bin')
+        plt.plot([df['acousticness'].min(), df['acousticness'].max()],
+                 [df['acousticness'].min(), df['acousticness'].max()], 'k--')
+        plt.xlabel('Actual Acousticness')
+        plt.ylabel('Predicted Acousticness')
+        plt.title('Actual vs Predicted Acousticness Hexbin Plot')
+        plt.show()
+    else:
+        print("Error: Required columns for regression not found.")
 
 def correverything_fanta(file):
     df = pd.read_csv(file)
-    attributes = ['danceability', 'energy','acousticness' ]
+    attributes = ['danceability_x', 'energy_x','rating' ] #all the _xs are spotify's
     fig, axes = plt.subplots(nrows=1, ncols=len(attributes), figsize=(15, 5))
 
     # Plot histograms for each attribute
@@ -252,11 +260,11 @@ def correverything_fanta(file):
     plt.show()
 
     # Exploratory Data Analysis using pairplot with histograms
-    sns.pairplot(df[['danceability', 'energy', 'acousticness']], diag_kind='hist', diag_kws={'bins': 30})
+    sns.pairplot(df[['danceability_x', 'energy_x', 'rating']], diag_kind='hist', diag_kws={'bins': 30})
     plt.show()
 
     # Correlation Matrix
-    correlation_matrix = df[['danceability', 'energy', 'acousticness']].corr()
+    correlation_matrix = df[['danceability_x', 'energy_x', 'rating']].corr()
     print(correlation_matrix)
     sns.heatmap(correlation_matrix, annot=True)
     plt.show()
@@ -268,6 +276,6 @@ if __name__ == '__main__':
     # analyze_danceability_popularity("Spotify/spotify_dataset.csv")
     # analyze_energy_popularity("Spotify/spotify_dataset.csv")
     #analyze_danceability_energy("Spotify/spotify_dataset.csv")
-    #correverything_spotify("Spotify/spotify_dataset.csv")
-    correverything_fanta("Fanta/Music review/tracks.csv")
+    correverything_spotify1("Spotify/spotify_dataset.csv")
+    #correverything_fanta("FINAL_CLEAN_FILE.csv")
     #correverything_spotify1("Spotify/spotify_dataset.csv")

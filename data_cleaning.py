@@ -115,4 +115,4 @@ def avg_danceability():
 
 if __name__ == '__main__':
     avg_danceability()
-    cleanfile()
+    #cleanfile()
