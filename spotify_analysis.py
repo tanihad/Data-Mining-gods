@@ -273,9 +273,10 @@ def correverything_fanta(file):
 
 # Example usage:
 if __name__ == '__main__':
+    dpclust("Spotify/spotify_dataset.csv")
     #analyze_danceability_popularity("Spotify/spotify_dataset.csv")
     # analyze_energy_popularity("Spotify/spotify_dataset.csv")
     #analyze_danceability_energy("Spotify/spotify_dataset.csv")
     #correverything_spotify1("Spotify/spotify_dataset.csv")
-    correverything_fanta("FINAL_CLEAN_FILE.csv")
+    #correverything_fanta("FINAL_CLEAN_FILE.csv")
     #correverything_spotify1("Spotify/spotify_dataset.csv")
